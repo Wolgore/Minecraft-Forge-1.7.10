@@ -1,5 +1,7 @@
 package com.Wolgore.OkamiCraft;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.Mod;
@@ -13,6 +15,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class OkamiCraft {
 
 	public static Item itemStrayBead;
+	public static Block blockPraisorium;
 	
 
     public static final String MODID = "oc";
@@ -25,7 +28,16 @@ public class OkamiCraft {
     	itemStrayBead = new ItemStrayBead();
     	itemStrayBead.setUnlocalizedName("ItemStrayBead"); //item.itemStrayBead.name
     	itemStrayBead.setTextureName("oc:Stray_Bead");
+    	blockPraisorium = new BlockPraisorium(Material.rock).setBlockName("BlockPraisorium");
+    	
+    	
+    	
+    	
+    	
+    	
     	GameRegistry.registerItem(itemStrayBead, itemStrayBead.getUnlocalizedName().substring(5));
+    	GameRegistry.registerBlock(blockPraisorium, blockPraisorium.getUnlocalizedName().substring(5));
+    	System.out.println(blockPraisorium.getUnlocalizedName().substring(5));
     }
     
     @EventHandler
