@@ -1,3 +1,10 @@
-*
-!/src/
-!.gitignore
+/bin/
+/build/
+/gradle/
+/eclipse/
+/.gradle/
+build.gradle
+CREDITS-*
+forge-*.txt
+gradle*
+MinecraftForge-*
