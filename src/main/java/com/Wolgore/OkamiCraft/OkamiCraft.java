@@ -15,6 +15,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class OkamiCraft {
 
 	public static Item itemStrayBead;
+	public static Item itemPraisoriumIngot;
 	public static Block blockPraisorium;
 	
 
@@ -28,6 +29,9 @@ public class OkamiCraft {
     	itemStrayBead = new ItemStrayBead();
     	itemStrayBead.setUnlocalizedName("ItemStrayBead"); //item.itemStrayBead.name
     	itemStrayBead.setTextureName("oc:Stray_Bead");
+    	itemPraisoriumIngot = new ItemPraisoriumIngot();
+    	itemPraisoriumIngot.setUnlocalizedName("ItemPraisoriumIngot");
+    	itemPraisoriumIngot.setTextureName("oc:Praisorium_Ingot");
     	blockPraisorium = new BlockPraisorium(Material.rock).setBlockName("BlockPraisorium").setBlockTextureName("oc:Praisorium_Block");
     	
     	
