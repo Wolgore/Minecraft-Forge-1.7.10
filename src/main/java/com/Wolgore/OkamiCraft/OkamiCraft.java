@@ -41,6 +41,22 @@ public class OkamiCraft {
 	public static Item itemObsidianShield;
 	public static Item itemCrescentMoon;
 	public static Item itemSnowflake;
+	public static Item itemBladeOfKusanagi;
+	public static Item itemDevoutBeads;
+	public static Item itemDivineRetribution;
+	public static Item itemEighthWonder;
+	public static Item itemExorcismBeads;
+	public static Item itemInfinityJudge;
+	public static Item itemLifeBeads;
+	public static Item itemLuckyMallet;
+	public static Item itemResurrectionBeads;
+	public static Item itemSevenStrike;
+	public static Item itemSnarlingBeast;
+	public static Item itemSolarFlare;
+	public static Item itemTohenboku;
+	public static Item itemTrinityMirror;
+	public static Item itemTsumugari;
+	public static Item itemTundraBeads;
 
     public static final String MODID = "oc";
     public static final String VERSION = "1.0";
@@ -50,6 +66,54 @@ public class OkamiCraft {
     	//Item/Block init and registering
     	//Config handling
     	
+    	itemTundraBeads = new ItemTundraBeads();
+    	itemTundraBeads.setUnlocalizedName("ItemTundraBeads");
+    	itemTundraBeads.setTextureName("oc:Tundra_Beads");
+    	itemTsumugari = new ItemTsumugari();
+    	itemTsumugari.setUnlocalizedName("ItemTsumugari");
+    	itemTsumugari.setTextureName("oc:Tsumugari");
+    	itemTrinityMirror = new ItemTrinityMirror();
+    	itemTrinityMirror.setUnlocalizedName("ItemTrinityMirror");
+    	itemTrinityMirror.setTextureName("oc:Trinity_Mirror");
+    	itemTohenboku = new ItemTogenboku();
+    	itemTohenboku.setUnlocalizedName("ItemTohenboku");
+    	itemTohenboku.setTextureName("oc:Susano_Sword");
+    	itemSolarFlare = new ItemSolarFlare();
+    	itemSolarFlare.setUnlocalizedName("ItemSolarFlare");
+    	itemSolarFlare.setTextureName("oc:Solar_Flare");
+    	itemSnarlingBeast = new ItemSnarlingBeast();
+    	itemSnarlingBeast.setUnlocalizedName("ItemSnarlingBeast");
+    	itemSnarlingBeast.setTextureName("oc:Snarling_Beast");
+    	itemSevenStrike = new ItemSevenStrike();
+    	itemSevenStrike.setUnlocalizedName("ItemSevenStrike");
+    	itemSevenStrike.setTextureName("oc:Seven_Strike");
+    	itemResurrectionBeads = new ItemResurrectionBeads();
+    	itemResurrectionBeads.setUnlocalizedName("ItemResurrectionBeads");
+    	itemResurrectionBeads.setTextureName("oc:Resurrection_Beads");
+    	itemLuckyMallet = new ItemLuckyMallet();
+    	itemLuckyMallet.setUnlocalizedName("ItemLuckyMallet");
+    	itemLuckyMallet.setTextureName("oc:Lucky_Mallet");
+    	itemLifeBeads = new ItemLifeBeads();
+    	itemLifeBeads.setUnlocalizedName("ItemLifeBeads");
+    	itemLifeBeads.setTextureName("oc:Life_Beads");
+    	itemInfinityJudge = new ItemInfinityJudge();
+    	itemInfinityJudge.setUnlocalizedName("ItemInfinityJudge");
+    	itemInfinityJudge.setTextureName("oc:Infinity_Judge");
+    	itemExorcismBeads = new ItemExorcismBeads();
+    	itemExorcismBeads.setUnlocalizedName("ItemExorcismBeads");
+    	itemExorcismBeads.setTextureName("oc:Exorcism_Beads");
+    	itemEighthWonder = new ItemEighthWonder();
+    	itemEighthWonder.setUnlocalizedName("ItemEighthWonder");
+    	itemEighthWonder.setTextureName("oc:Eighth_Wonder");
+    	itemDivineRetribution = new ItemDivineRetribution();
+    	itemDivineRetribution.setUnlocalizedName("ItemDivineRetribution");
+    	itemDivineRetribution.setTextureName("oc:Divine_Retribution");
+    	itemDevoutBeads = new ItemDevoutBeads();
+    	itemDevoutBeads.setUnlocalizedName("ItemDevoutBeads");
+    	itemDevoutBeads.setTextureName("oc:Devout_Beads");
+    	itemBladeOfKusanagi = new ItemBladeofKusanagi();
+    	itemBladeOfKusanagi.setUnlocalizedName("ItemBladeOfKusanagi");
+    	itemBladeOfKusanagi.setTextureName("oc:Blade_of_Kusanagi");
     	itemSnowflake = new ItemSnowflake();
     	itemSnowflake.setUnlocalizedName("ItemSnowflake");
     	itemSnowflake.setTextureName("oc:Tundra_Beads_Material");
@@ -82,7 +146,7 @@ public class OkamiCraft {
     	itemLostSpirit.setTextureName("oc:Resurrection_Beads_Material");
     	itemLifeEssence = new ItemLifeEssence();
     	itemLifeEssence.setUnlocalizedName("ItemLifeEssence");
-    	itemLifeEssence.setTextureName("oc:Life_Beads_Materials");
+    	itemLifeEssence.setTextureName("oc:Life_Beads_Material");
     	itemShardsOfJustice = new ItemShardsOfJustice();
     	itemShardsOfJustice.setUnlocalizedName("ItemShardsOfJustice");
     	itemShardsOfJustice.setTextureName("oc:Infinity_Judge_Material");
@@ -132,11 +196,23 @@ public class OkamiCraft {
     	itemStrayBead.setCreativeTab(oc_creative_tab);
     	itemPraisoriumIngot.setCreativeTab(oc_creative_tab);
     	itemThunderEdge.setCreativeTab(oc_creative_tab);
+    	itemBladeOfKusanagi.setCreativeTab(oc_creative_tab);
+    	itemDevoutBeads.setCreativeTab(oc_creative_tab);
+    	itemDivineRetribution.setCreativeTab(oc_creative_tab);
+    	itemEighthWonder.setCreativeTab(oc_creative_tab);
+    	itemExorcismBeads.setCreativeTab(oc_creative_tab);
+    	itemInfinityJudge.setCreativeTab(oc_creative_tab);
+    	itemLifeBeads.setCreativeTab(oc_creative_tab);
+    	itemLuckyMallet.setCreativeTab(oc_creative_tab);
+    	itemResurrectionBeads.setCreativeTab(oc_creative_tab);
+    	itemSevenStrike.setCreativeTab(oc_creative_tab);
+    	itemSnarlingBeast.setCreativeTab(oc_creative_tab);
+    	itemSolarFlare.setCreativeTab(oc_creative_tab);
+    	itemTohenboku.setCreativeTab(oc_creative_tab);
+    	itemTrinityMirror.setCreativeTab(oc_creative_tab);
+    	itemTsumugari.setCreativeTab(oc_creative_tab);
+    	itemTundraBeads.setCreativeTab(oc_creative_tab);
     	blockPraisorium.setCreativeTab(oc_creative_tab);
-    	
-    	
-    	
-    	
     	
     	GameRegistry.registerItem(itemStrayBead, itemStrayBead.getUnlocalizedName().substring(5));
     	GameRegistry.registerBlock(blockPraisorium, blockPraisorium.getUnlocalizedName().substring(5));
@@ -159,6 +235,22 @@ public class OkamiCraft {
     	GameRegistry.registerItem(itemObsidianShield, itemObsidianShield.getUnlocalizedName().substring(5));
     	GameRegistry.registerItem(itemCrescentMoon, itemCrescentMoon.getUnlocalizedName().substring(5));
     	GameRegistry.registerItem(itemSnowflake, itemSnowflake.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemBladeOfKusanagi, itemBladeOfKusanagi.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemDevoutBeads, itemDevoutBeads.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemDivineRetribution, itemDivineRetribution.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemEighthWonder, itemEighthWonder.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemExorcismBeads, itemExorcismBeads.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemInfinityJudge, itemInfinityJudge.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemLifeBeads, itemLifeBeads.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemLuckyMallet, itemLuckyMallet.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemResurrectionBeads, itemResurrectionBeads.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemSevenStrike, itemSevenStrike.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemSnarlingBeast, itemSnarlingBeast.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemSolarFlare, itemSolarFlare.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemTohenboku, itemTohenboku.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemTrinityMirror, itemTrinityMirror.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemTsumugari, itemTsumugari.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemTundraBeads, itemTundraBeads.getUnlocalizedName().substring(5));
     	GameRegistry.registerWorldGenerator(new PraisoriumGeneration(), 0);
     	System.out.println(blockPraisorium.getUnlocalizedName().substring(5));
     }
@@ -166,6 +258,9 @@ public class OkamiCraft {
     @EventHandler
     public void init(FMLInitializationEvent event) {
     	//Proxy, TileEntity, entity, GUI and Packet Registering
+    	GameRegistry.addRecipe(new ItemStack(ThunderEdge), new Object[]{" A ",
+    																	" A ",
+    																	" C ", 'A',new ItemStack(itemStrayIngot)});
     }
 
     @EventHandler
