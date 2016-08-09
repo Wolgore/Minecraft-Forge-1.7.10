@@ -2,14 +2,20 @@ package com.Wolgore.OkamiCraft;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+
+import com.Bebo.RomanceDawn.RomanceDawn;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid = "oc", name = "Okami Craft", version = "1.0")
 public class OkamiCraft {
@@ -23,7 +29,7 @@ public class OkamiCraft {
 	public static Item itemPlainMirror;
 	public static Item itemRotationDevice;
 	public static Item itemMetallicYingYang;
-	public static Item itemShardsOfJustic;
+	public static Item itemShardsOfJustice;
 	public static Item itemLifeEssence;
 	public static Item itemLostSpirit;
 	public static Item itemFlameSpikes;
@@ -77,9 +83,9 @@ public class OkamiCraft {
     	itemLifeEssence = new ItemLifeEssence();
     	itemLifeEssence.setUnlocalizedName("ItemLifeEssence");
     	itemLifeEssence.setTextureName("oc:Life_Beads_Materials");
-    	itemShardsOfJustic = new ItemShardsOfJustic();
-    	itemShardsOfJustic.setUnlocalizedName("ItemShardsOfJustic");
-    	itemShardsOfJustic.setTextureName("oc:Infinity_Judge_Material");
+    	itemShardsOfJustice = new ItemShardsOfJustice();
+    	itemShardsOfJustice.setUnlocalizedName("ItemShardsOfJustice");
+    	itemShardsOfJustice.setTextureName("oc:Infinity_Judge_Material");
     	itemMetallicYingYang = new ItemMetallicYingYang();
     	itemMetallicYingYang.setUnlocalizedName("ItemMetallicYingYang");
     	itemMetallicYingYang.setTextureName("oc:Exorcism_Beads_Material");
@@ -106,6 +112,27 @@ public class OkamiCraft {
     	itemThunderEdge.setTextureName("oc:Thunder_Edge");
     	blockPraisorium = new BlockPraisorium(Material.rock).setBlockName("BlockPraisorium").setBlockTextureName("oc:Praisorium_Block");
     	
+    	itemSnowflake.setCreativeTab(oc_creative_tab);
+    	itemCrescentMoon.setCreativeTab(oc_creative_tab);
+    	itemObsidianShield.setCreativeTab(oc_creative_tab);
+    	itemEverlastingStorm.setCreativeTab(oc_creative_tab);
+    	itemLeaf.setCreativeTab(oc_creative_tab);
+    	itemStrayIngot.setCreativeTab(oc_creative_tab);
+    	itemPerfectMirror.setCreativeTab(oc_creative_tab);
+    	itemHolyBlade.setCreativeTab(oc_creative_tab);
+    	itemFlameSpikes.setCreativeTab(oc_creative_tab);
+    	itemLostSpirit.setCreativeTab(oc_creative_tab);
+    	itemLifeEssence.setCreativeTab(oc_creative_tab);
+    	itemShardsOfJustice.setCreativeTab(oc_creative_tab);
+    	itemMetallicYingYang.setCreativeTab(oc_creative_tab);
+    	itemRotationDevice.setCreativeTab(oc_creative_tab);
+    	itemPlainMirror.setCreativeTab(oc_creative_tab);
+    	itemDevoutBead.setCreativeTab(oc_creative_tab);
+    	itemWindInABottle.setCreativeTab(oc_creative_tab);
+    	itemStrayBead.setCreativeTab(oc_creative_tab);
+    	itemPraisoriumIngot.setCreativeTab(oc_creative_tab);
+    	itemThunderEdge.setCreativeTab(oc_creative_tab);
+    	blockPraisorium.setCreativeTab(oc_creative_tab);
     	
     	
     	
@@ -120,7 +147,7 @@ public class OkamiCraft {
     	GameRegistry.registerItem(itemPlainMirror, itemPlainMirror.getUnlocalizedName().substring(5));
     	GameRegistry.registerItem(itemRotationDevice, itemRotationDevice.getUnlocalizedName().substring(5));
     	GameRegistry.registerItem(itemMetallicYingYang, itemMetallicYingYang.getUnlocalizedName().substring(5));
-    	GameRegistry.registerItem(itemShardsOfJustic, itemShardsOfJustic.getUnlocalizedName().substring(5));
+    	GameRegistry.registerItem(itemShardsOfJustice, itemShardsOfJustice.getUnlocalizedName().substring(5));
     	GameRegistry.registerItem(itemLifeEssence, itemLifeEssence.getUnlocalizedName().substring(5));
     	GameRegistry.registerItem(itemLostSpirit, itemLostSpirit.getUnlocalizedName().substring(5));
     	GameRegistry.registerItem(itemFlameSpikes, itemFlameSpikes.getUnlocalizedName().substring(5));
@@ -145,4 +172,11 @@ public class OkamiCraft {
     public void postInit(FMLPostInitializationEvent event) {
     }
     
+    public static CreativeTabs oc_creative_tab = new CreativeTabs("tab.oc") {
+   	   @Override
+   	   @SideOnly(Side.CLIENT)
+   	   public Item getTabIconItem() {
+   	      return itemStrayBead;
+   	   }
+     };
 }

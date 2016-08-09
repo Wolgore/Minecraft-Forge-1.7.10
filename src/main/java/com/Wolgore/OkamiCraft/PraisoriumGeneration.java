@@ -29,7 +29,7 @@ public class PraisoriumGeneration implements IWorldGenerator{
 		}
 	}
 	public void generateOverworld(World world, Random rand, int x, int z){ //0
-		generateOre(OkamiCraft.blockPraisorium, world, rand, x, z, 2, 6, 1000000, 0, 16, Blocks.stone);
+		generateOre(OkamiCraft.blockPraisorium, world, rand, x, z, 2, 6, 1000000, 0, 64, Blocks.stone);
 		
 	}
 	

@@ -36,9 +36,7 @@ public class RomanceDawn {
     	itemgumgumbazooka = new ItemGumGumBazooka();
     	itemgumgumgatling = new ItemGumGumGatling();
     	itemstrawhat = new ItemStrawHat();
-    	LanguageRegistry.instance().addStringLocalization("itemGroup.tabCustom", "en_US", "My Custom Tab");
-    	
-    	
+
     	
     	GameRegistry.registerItem(itemgumgumpistol, "GumGumPistol");
     	GameRegistry.registerItem(itemgumgumgatling, "GumGumGatling");

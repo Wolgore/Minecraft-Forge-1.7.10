@@ -38,3 +38,6 @@ item.ItemPlainMirror.name=Plain Mirror
 
 item.ItemWindInABottle.name=Wind in a Bottle
 
+item.ItemSnowflake.name=Snowflake
+
+itemGroup.tab.oc=OkamiCraft
